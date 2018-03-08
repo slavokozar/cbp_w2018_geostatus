@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/modal', 'ModalController@index');
+
+
+
 Route::get('/statuses', 'StatusController@index');
 
 Route::get('/statuses/create', 'StatusController@create');
